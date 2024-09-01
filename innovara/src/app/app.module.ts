@@ -3,12 +3,13 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ContatoComponent } from './contato/contato.component';
 import { PaginaInicialComponent } from './pagina-inicial/pagina-inicial.component';
 import { SobreNosComponent } from './sobre-nos/sobre-nos.component';
-import { ProjetosComponent } from './projetos/projetos.component';
 import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
+import { EquipeComponent } from './equipe/equipe.component';
 
 @NgModule({
   declarations: [
@@ -16,13 +17,14 @@ import { HeaderComponent } from './header/header.component';
     ContatoComponent,
     PaginaInicialComponent,
     SobreNosComponent,
-    ProjetosComponent,
     FooterComponent,
-    HeaderComponent
+    HeaderComponent,
+    EquipeComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
